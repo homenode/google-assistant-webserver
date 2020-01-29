@@ -1,4 +1,4 @@
-FROM multiarch/debian-debootstrap:armel-stretch
+FROM amd64/debian:stretch
 
 # Install packages
 RUN apt-get update
