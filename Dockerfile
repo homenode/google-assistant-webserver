@@ -1,4 +1,6 @@
-FROM amd64/debian:stretch
+FROM multiarch/debian-debootstrap:amd64-stretch
+
+COPY asound.conf /etc/asound.conf
 
 # Install packages
 RUN apt-get update
